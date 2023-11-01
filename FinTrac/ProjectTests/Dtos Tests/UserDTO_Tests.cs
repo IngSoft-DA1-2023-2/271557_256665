@@ -71,6 +71,7 @@ public class UserDTO_Tests
 
     #endregion
 
+    [TestMethod]
     public void GivenValues_ShouldBeToCreateAUserDTO()
     {
 
