@@ -61,7 +61,7 @@ public class UserDTO_Tests
 
         UserDTO.Address = address;
         
-        Assert.AreEqual(address,UserDTO);
+        Assert.AreEqual(address,UserDTO.Address);
 
     }
   
