@@ -1,4 +1,5 @@
 using BusinessLogic.Dto_Components;
+using BusinessLogic.User_Components;
 
 
 namespace TestProject1;
@@ -6,26 +7,38 @@ namespace TestProject1;
 public class UserDTO_Tests
 {
 
+    private UserDTO UserDTO;
+
+    [TestInitialize]
+    public void Initialize()
+    {
+        UserDTO = new UserDTO();
+    }
+    
     #region FirstName
 
     [TestMethod]
     public void GivenFirstName_ShouldBeSetted()
     {
         string firstName = "Ignacio";
-        UserDTO userDTO = new UserDTO();
-        userDTO.FirstName = firstName;
+        UserDTO.FirstName = firstName;
         
-        Assert.AreEqual(firstName,userDTO.FirstName);
+        Assert.AreEqual(firstName,UserDTO.FirstName);
         
     }
 
     #endregion
+    
+    #region LastName
 
     [TestMethod]
     public void GivenLastName_ShouldBeSetted()
     {
         string lastName = "Quevedo";
-        UserDTO userDto = new UserDTO();
-        userDto.LastName = lastName;
+        UserDTO.LastName = lastName;
+        Assert.AreEqual(lastName,UserDTO.LastName);
     }
+
+    #endregion
+  
 }
