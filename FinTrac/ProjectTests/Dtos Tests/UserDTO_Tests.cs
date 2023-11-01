@@ -49,7 +49,7 @@ public class UserDTO_Tests
         string email = "nachitoquevedo@gmail.com";
         UserDTO.Email = email;
         
-        Assert.AreEqual(email.UserDTO.Email);
+        Assert.AreEqual(email,UserDTO.Email);
     }
 
     #endregion
