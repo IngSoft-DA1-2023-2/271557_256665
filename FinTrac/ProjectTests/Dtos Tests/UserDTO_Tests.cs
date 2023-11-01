@@ -3,9 +3,11 @@ using BusinessLogic.User_Components;
 
 
 namespace TestProject1;
+
 [TestClass]
 public class UserDTO_Tests
 {
+    #region TestInit
 
     private UserDTO UserDTO;
 
@@ -14,6 +16,8 @@ public class UserDTO_Tests
     {
         UserDTO = new UserDTO();
     }
+
+    #endregion
     
     #region FirstName
 
@@ -22,13 +26,12 @@ public class UserDTO_Tests
     {
         string firstName = "Ignacio";
         UserDTO.FirstName = firstName;
-        
-        Assert.AreEqual(firstName,UserDTO.FirstName);
-        
+
+        Assert.AreEqual(firstName, UserDTO.FirstName);
     }
 
     #endregion
-    
+
     #region LastName
 
     [TestMethod]
@@ -36,7 +39,7 @@ public class UserDTO_Tests
     {
         string lastName = "Quevedo";
         UserDTO.LastName = lastName;
-        Assert.AreEqual(lastName,UserDTO.LastName);
+        Assert.AreEqual(lastName, UserDTO.LastName);
     }
 
     #endregion
@@ -48,25 +51,23 @@ public class UserDTO_Tests
     {
         string email = "nachitoquevedo@gmail.com";
         UserDTO.Email = email;
-        
-        Assert.AreEqual(email,UserDTO.Email);
+
+        Assert.AreEqual(email, UserDTO.Email);
     }
 
     #endregion
 
     #region Address
-    
+
     [TestMethod]
     public void GivenAddress_ShouldBeSetted()
     {
         string address = "Av Brasil 1215";
 
         UserDTO.Address = address;
-        
-        Assert.AreEqual(address,UserDTO.Address);
 
+        Assert.AreEqual(address, UserDTO.Address);
     }
+
     #endregion
-  
-  
 }
