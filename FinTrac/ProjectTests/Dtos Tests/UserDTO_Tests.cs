@@ -5,7 +5,9 @@ namespace TestProject1;
 [TestClass]
 public class UserDTO_Tests
 {
-    
+
+    #region FirstName
+
     [TestMethod]
     public void GivenFirstName_ShouldBeSetted()
     {
@@ -16,4 +18,7 @@ public class UserDTO_Tests
         Assert.AreEqual(firstName,userDTO.FirstName);
         
     }
+
+    #endregion
+  
 }
