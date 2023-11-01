@@ -1,14 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿namespace BusinessLogic.Enums;
 
-namespace BusinessLogic.Enums
+public enum TypeEnum
 {
-    public enum TypeEnum
-    {
-        Income = 1,
-        Outcome = 2
-    }
+    Income = 1,
+    Outcome = 2
 }

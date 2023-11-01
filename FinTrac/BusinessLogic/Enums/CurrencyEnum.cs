@@ -1,18 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel;
 
-namespace BusinessLogic.Enums
+namespace BusinessLogic.Enums;
+
+public enum CurrencyEnum
 {
-    public enum CurrencyEnum
-    {
-        [Description("$")]
-        UY = 1,
+    [Description("$")] UY = 1,
 
-        [Description("US$")]
-        USA = 2
-    }
+    [Description("US$")] USA = 2
 }
