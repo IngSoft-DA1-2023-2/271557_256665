@@ -53,5 +53,16 @@ public class UserDTO_Tests
     }
 
     #endregion
+
+    [TestMethod]
+    public void GivenAddress_ShouldBeSetted()
+    {
+        string address = "Av Brasil 1215";
+
+        UserDTO.Address = address;
+        
+        Assert.AreEqual(address,UserDTO);
+
+    }
   
 }
