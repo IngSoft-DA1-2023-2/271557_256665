@@ -54,6 +54,8 @@ public class UserDTO_Tests
 
     #endregion
 
+    #region Address
+    
     [TestMethod]
     public void GivenAddress_ShouldBeSetted()
     {
@@ -64,5 +66,7 @@ public class UserDTO_Tests
         Assert.AreEqual(address,UserDTO.Address);
 
     }
+    #endregion
+  
   
 }
