@@ -70,6 +70,8 @@ public class UserDTO_Tests
     }
 
     #endregion
+    
+    #region Constructor
 
     [TestMethod]
     public void GivenValues_ShouldBeToCreateAUserDTO()
@@ -86,7 +88,6 @@ public class UserDTO_Tests
         Assert.AreEqual(lastName,genericUserDTO.LastName);
         Assert.AreEqual(email,genericUserDTO.Email);
         Assert.AreEqual(address,genericUserDTO.Address);
-        
-
     }
+    #endregion
 }
