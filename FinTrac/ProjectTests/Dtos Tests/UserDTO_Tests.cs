@@ -21,10 +21,11 @@ public class UserDTO_Tests
 
     #endregion
 
+    [TestMethod]
     public void GivenLastName_ShouldBeSetted()
     {
         string lastName = "Quevedo";
         UserDTO userDto = new UserDTO();
-        userDto.Lastname = lastName;
+        userDto.LastName = lastName;
     }
 }
