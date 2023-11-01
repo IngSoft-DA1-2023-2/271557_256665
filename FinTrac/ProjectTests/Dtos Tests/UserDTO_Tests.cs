@@ -1,5 +1,8 @@
-namespace BusinessLogicTests.Dtos_Tests;
+using BusinessLogic.Dto_Components;
 
+
+namespace TestProject1;
+[TestClass]
 public class UserDTO_Tests
 {
     
@@ -11,8 +14,6 @@ public class UserDTO_Tests
         userDTO.FirstName = firstName;
         
         Assert.AreEqual(firstName,userDTO.FirstName);
-
-
         
     }
 }
